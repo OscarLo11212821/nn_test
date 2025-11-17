@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opera-v"
+version = "0.1.0"
+description = "Reference implementation of the OPERA-V architecture (Ortho-Paraunitary, Equivariant, Rational-passive Architecture for Vision)."
+requires-python = ">=3.9"
+dependencies = [
+    "torch>=2.0.0",
+]
+authors = [
+    {name = "Cursor OPERA-V Team"},
+]
+readme = "OPERA-V.md"
+license = {text = "Apache-2.0"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
